@@ -4,7 +4,7 @@ import type { VariantProps } from 'class-variance-authority'
 import { twMerge } from 'tailwind-merge'
 
 // Add an array of classes to every single button you create
-const buttonStyles = cva(['transition-colors'], {
+export const buttonStyles = cva(['transition-colors'], {
   variants: {
     variant: {
       default: ['bg-secondary', 'hover:bg-secondary-hover'],

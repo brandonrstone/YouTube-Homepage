@@ -54,7 +54,6 @@ export default function VideoGridItem({
           className={`block w-full h-full object-cover transition-[border-radius] duration-200 ${isVideoPlaying ? 'rounded-0' : 'rounded-xl'}`}
           src={thumbnailUrl}
           alt='Video thumbnail'
-
         />
         <div className='absolute bottom-1 px-0.5 bg-secondary-dark text-secondary text-sm rounded'>
           {formatDuration(duration)}
@@ -72,12 +71,8 @@ export default function VideoGridItem({
           <img className='w-12 h-12 rounded-full' src={channel.profileUrl} />
         </a>
         <div className='flex flex-col'>
-          <a className='font-bold' href={`/watch?v=${id}`}>
-            {title}
-          </a>
-          <a className='text-secondary' href={`/@${channel.id}`}>
-            {channel.name}
-          </a>
+          <a className='font-bold' href={`/watch?v=${id}`}>{title}</a>
+          <a className='text-secondary' href={`/@${channel.id}`}>{channel.name}</a>
           <div className='text-secondary text-sm'>
             {VIEW_FORMATTER.format(views)} Views • {formatTimeAgo(postedAt)}
           </div>

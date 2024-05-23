@@ -72,7 +72,7 @@ export default function CategoryPills({ categories, selectedCategory, onSelect }
         </div>
       )}
       {isRightVisible && (
-        <div className='w-24 h-full absolute right-0 flex justify-end top-1/2 bg-gradient-to-l from-white from-50% to-transparent -translate-y-1/2'>
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 bg-gradient-to-l from-white from-50% to-transparent w-24 h-full flex justify-end">
           <Button
             className='w-auto h-full aspect-square p-1.5'
             size='icon'

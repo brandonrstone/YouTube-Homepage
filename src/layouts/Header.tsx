@@ -3,19 +3,14 @@ import { ArrowLeft, Bell, MenuIcon, Mic, Search, Upload, User } from 'lucide-rea
 import Logo from '../assets/Logo.png'
 import Button from '../components/Button'
 import { useState } from 'react'
+import { useSidebarContext } from '../context/SidebarContext'
 
 export default function Header() {
+  const { toggle } = useSidebarContext()
   const [showFullWidthSearch, setShowFullWidthSearch] = useState(false)
   return (
     <div className='flex justify-between pt-2 mb-6 mx-4 gap-10 lg:gap-20'>
-      <div className={`flex-shrink-0 gap-4 items-center ${showFullWidthSearch ? 'hidden' : 'flex'}`}>
-        <Button size={'icon'} variant={'ghost'}>
-          <MenuIcon />
-        </Button>
-        <a href="/">
-          <img className='h-10' src={Logo} alt='YouTube Logo' />
-        </a>
-      </div>
+      <PageHeaderFirstSection hidden={showFullWidthSearch} />
       <form className={`flex-grow justify-center gap-4 ${showFullWidthSearch ? 'flex' : 'hidden md:flex'}`}>
         {showFullWidthSearch && (
           <Button
@@ -65,6 +60,20 @@ export default function Header() {
           <User />
         </Button>
       </div>
+    </div>
+  )
+}
+
+export function PageHeaderFirstSection({ hidden = false }: { hidden?: boolean }) {
+  const { toggle } = useSidebarContext()
+  return (
+    <div className={`flex-shrink-0 gap-4 items-center ${hidden ? 'hidden' : 'flex'}`}>
+      <Button size={'icon'} variant={'ghost'} onClick={toggle}>
+        <MenuIcon />
+      </Button>
+      <a href="/">
+        <img className='h-10' src={Logo} alt='YouTube Logo' />
+      </a>
     </div>
   )
 }
