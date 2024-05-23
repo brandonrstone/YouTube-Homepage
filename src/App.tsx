@@ -13,7 +13,7 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState('All')
   return (
     <SidebarProvider>
-      <div className='max-h-screen'>
+      <div className='max-h-screen flex flex-col'>
         <Header />
         {/* auto will size the container based on its content */}
         <div className='grid grid-cols-[auto,1fr] flex-grow-1 overflow-auto'>
