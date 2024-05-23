@@ -6,7 +6,6 @@ import { useState } from 'react'
 import { useSidebarContext } from '../context/SidebarContext'
 
 export default function Header() {
-  const { toggle } = useSidebarContext()
   const [showFullWidthSearch, setShowFullWidthSearch] = useState(false)
   return (
     <div className='flex justify-between pt-2 mb-6 mx-4 gap-10 lg:gap-20'>
