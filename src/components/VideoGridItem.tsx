@@ -49,7 +49,8 @@ export default function VideoGridItem({
       onMouseEnter={() => setIsVideoPlaying(true)}
       onMouseLeave={() => setIsVideoPlaying(false)}
     >
-      <a className='relative aspect-video' href={`/watch?v=${id}`}>
+      {/* Change this to an <a> tag, maybe one day... */}
+      <div className='relative aspect-video cursor-pointer'>
         <img
           className={`block w-full h-full object-cover transition-[border-radius] duration-200 ${isVideoPlaying ? 'rounded-0' : 'rounded-xl'}`}
           src={thumbnailUrl}
@@ -65,7 +66,7 @@ export default function VideoGridItem({
           muted
           playsInline
         />
-      </a>
+      </div>
       <div className='flex gap-2'>
         <a className='flex-shrink-0' href={`/@${channel.id}`}>
           <img className='w-12 h-12 rounded-full' src={channel.profileUrl} />
