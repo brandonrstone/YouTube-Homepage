@@ -43,7 +43,7 @@ export default function Sidebar() {
           <LargeSidebarItem IconOrImgUrl={History} title='Library' url='/library' isActive />
           <LargeSidebarItem IconOrImgUrl={Clapperboard} title='History' url='/history' />
           <LargeSidebarItem IconOrImgUrl={PlaySquare} title='Your Videos' url='/your-videos' />
-          <LargeSidebarItem IconOrImgUrl={Clock} title='SubscWatch Later' url='/playlist?list=WL' />
+          <LargeSidebarItem IconOrImgUrl={Clock} title='Watch Later' url='/playlist?list=WL' />
           {playlists.map(playlist => (
             <LargeSidebarItem
               key={playlist.id}

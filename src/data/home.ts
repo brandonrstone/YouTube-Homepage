@@ -1,3 +1,15 @@
+import Fall from '../assets/Fall.jpg'
+import FishTacos from '../assets/FishTacos.webp'
+import FoodCentralLogo from '../assets/FoodCentralLogo.webp'
+import HandyRepairLogo from '../assets/HandyRepairLogo.png'
+import HandyRepairThumbnail from '../assets/HandyRepairThumbnail.webp'
+import MacbookThumbnail from '../assets/MacbookThumbnail.webp'
+import MensFitnessLogo from '../assets/MensFitnessLogo.jpg'
+import MensFitnessThumbnail from '../assets/MensFitnessThumbnail.webp'
+import ReactDevCentralLogo from '../assets/ReactLogo.jpg'
+import TechLogo from '../assets/TechLogo.webp'
+import TheTraveVlogLogo from '../assets/TheTraveVlogLogo.jpeg'
+
 export const categories = [
   "All",
   "JavaScript",
@@ -19,115 +31,101 @@ export const categories = [
 export const videos = [
   {
     id: "1",
-    title: "CSS Anchor Is The Best New CSS Feature Since Flexbox",
+    title: "DIY Bathroom Remodel",
     channel: {
-      name: "Web Dev Simplified",
-      id: "WebDevSimplified",
-      profileUrl:
-        "https://yt3.ggpht.com/ytc/APkrFKZWeMCsx4Q9e_Hm6nhOOUQ3fv96QGUXiMr1-pPP=s48-c-k-c0x00ffffff-no-rj",
+      name: "Renovate Now",
+      id: "RenovateNow",
+      profileUrl: HandyRepairLogo
     },
     views: 222536,
     postedAt: new Date("2023-08-29"),
     duration: 938,
-    thumbnailUrl: "https://i.ytimg.com/vi/B4Y9Ed4lLAI/maxresdefault.jpg",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    thumbnailUrl: HandyRepairThumbnail,
+    videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
   },
   {
     id: "2",
     title: "NEW Way To Create Variables In JavaScript",
     channel: {
-      name: "Web Dev Simplified",
-      id: "WebDevSimplified",
-      profileUrl:
-        "https://yt3.ggpht.com/ytc/APkrFKZWeMCsx4Q9e_Hm6nhOOUQ3fv96QGUXiMr1-pPP=s48-c-k-c0x00ffffff-no-rj",
+      name: "React Dev Central",
+      id: "ReactDevCentral",
+      profileUrl: ReactDevCentralLogo
     },
     views: 257136,
     postedAt: new Date("2023-08-22"),
     duration: 732,
     thumbnailUrl: "https://i.ytimg.com/vi/d6a8RymS1zI/maxresdefault.jpg",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
   },
   {
     id: "3",
-    title: "Front-end developer takes on a CSS battle",
+    title: "Top 10 Must-Visit Locations in the Fall",
     channel: {
-      name: "Kevin Powell",
-      id: "KevinPowell",
-      profileUrl:
-        "https://yt3.ggpht.com/ytc/APkrFKa6XiLa13mMVPzkmmTBcgNPjjqCGPrY86KfJFmf5w=s48-c-k-c0x00ffffff-no-rj",
+      name: "The Travel Vlog",
+      id: "TheTravelVlog",
+      profileUrl: TheTraveVlogLogo,
     },
     views: 1232300,
     postedAt: new Date("2023-10-05"),
     duration: 120,
-    thumbnailUrl: "https://i.ytimg.com/vi/eYPyIq5Y3Rk/maxresdefault.jpg",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    thumbnailUrl: Fall,
+    videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
   },
   {
     id: "4",
-    title: "Quick guide to CSS focus states",
+    title: "Leg Workout Routines For Men",
     channel: {
-      name: "Kevin Powell",
-      id: "KevinPowell",
-      profileUrl:
-        "https://yt3.ggpht.com/ytc/APkrFKa6XiLa13mMVPzkmmTBcgNPjjqCGPrY86KfJFmf5w=s48-c-k-c0x00ffffff-no-rj",
+      name: "Fitness Daily",
+      id: "FitnessDaily",
+      profileUrl: MensFitnessLogo
     },
-    views: 112,
+    views: 35000,
     postedAt: new Date("2023-9-19"),
-    duration: 4343,
-    thumbnailUrl: "https://i.ytimg.com/vi/apdD69J4bEc/maxresdefault.jpg",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    duration: 443,
+    thumbnailUrl: MensFitnessThumbnail,
+    videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
   },
   {
     id: "5",
-    title: "I Cannot Believe React Made A Hook For This",
+    title: "The BEST Fish Tacos Recipe EVER!",
     channel: {
-      name: "Web Dev Simplified",
-      id: "WebDevSimplified",
-      profileUrl:
-        "https://yt3.ggpht.com/ytc/APkrFKZWeMCsx4Q9e_Hm6nhOOUQ3fv96QGUXiMr1-pPP=s48-c-k-c0x00ffffff-no-rj",
+      name: "Food Central",
+      id: "FoodCentral",
+      profileUrl: FoodCentralLogo
     },
-    views: 42345,
-    postedAt: new Date("2023-03-02"),
-    duration: 1000,
-    thumbnailUrl: "https://i.ytimg.com/vi/M3mGY0pgFk0/maxresdefault.jpg",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    views: 884340,
+    postedAt: new Date("2023-03-03"),
+    duration: 54,
+    thumbnailUrl: FishTacos,
+    videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
   },
   {
     id: "6",
-    title: "I Got Laid Off...",
-    channel: {
-      name: "Caleb Curry",
-      id: "CalebCurry",
-      profileUrl:
-        "https://yt3.googleusercontent.com/ytc/APkrFKbpSojje_-tkBQecNtFuPdSCrg3ZT0FhaYjln9k0g=s176-c-k-c0x00ffffff-no-rj",
-    },
-    views: 10340,
-    postedAt: new Date("2023-03-03"),
-    duration: 54,
-    thumbnailUrl: "https://i.ytimg.com/vi/i2JVQdLnkAY/maxresdefault.jpg",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-  },
-  {
-    id: "7",
     title: "Tails OS in 100 Seconds",
     channel: {
       name: "Fireship",
       id: "Fireship",
-      profileUrl:
-        "https://yt3.googleusercontent.com/ytc/APkrFKb--NH6RwAGHYsD3KfxX-SAgWgIHrjR5E4Jb5SDSQ=s176-c-k-c0x00ffffff-no-rj",
+      profileUrl: "https://yt3.googleusercontent.com/ytc/APkrFKb--NH6RwAGHYsD3KfxX-SAgWgIHrjR5E4Jb5SDSQ=s176-c-k-c0x00ffffff-no-rj",
     },
     views: 10323340,
     postedAt: new Date("2023-08-09"),
     duration: 100,
     thumbnailUrl: "https://i.ytimg.com/vi/mVKAyw0xqxw/maxresdefault.jpg",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+    videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+  },
+  {
+    id: "7",
+    title: "My Review of the New Macbook Pro",
+    channel: {
+      name: "Honest Tech Reviews",
+      id: "Honest Tech Reviews",
+      profileUrl: TechLogo
+    },
+    views: 1323340,
+    postedAt: new Date("2023-08-09"),
+    duration: 100,
+    thumbnailUrl: MacbookThumbnail,
+    videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
   },
   {
     id: "8",
@@ -135,14 +133,12 @@ export const videos = [
     channel: {
       name: "Fireship",
       id: "Fireship",
-      profileUrl:
-        "https://yt3.googleusercontent.com/ytc/APkrFKb--NH6RwAGHYsD3KfxX-SAgWgIHrjR5E4Jb5SDSQ=s176-c-k-c0x00ffffff-no-rj",
+      profileUrl: "https://yt3.googleusercontent.com/ytc/APkrFKb--NH6RwAGHYsD3KfxX-SAgWgIHrjR5E4Jb5SDSQ=s176-c-k-c0x00ffffff-no-rj",
     },
     views: 20323340,
     postedAt: new Date("2023-09-09"),
     duration: 105,
     thumbnailUrl: "https://i.ytimg.com/vi/kxT8-C1vmd4/maxresdefault.jpg",
-    videoUrl:
-      "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-  },
+    videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+  }
 ]
