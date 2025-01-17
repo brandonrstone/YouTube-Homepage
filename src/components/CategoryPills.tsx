@@ -21,8 +21,8 @@ export default function CategoryPills({ categories, selectedCategory, onSelect }
   useEffect(() => {
     if (containerRef.current == null) return
 
-    const observer = new ResizeObserver(entries => {
-      const container = entries[0]?.target // Same as containerRef.current in thise case
+    const observer = new ResizeObserver(([entry]) => {
+      const container = entry?.target // Same as containerRef.current in thise case
       if (container == null) return
 
       setIsLeftVisible(translate > 0)
